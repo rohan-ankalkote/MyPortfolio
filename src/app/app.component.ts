@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { BannerComponent } from './banner/banner.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @Component({
     selector: 'app-root',
-    imports: [BannerComponent],
+    imports: [BannerComponent, ContactComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     host: {
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit {
     title = 'Rohan Ankalkote';
     isPc: boolean = false;
 
-    constructor(private breakPointObserver: BreakpointObserver) {}
+    constructor(private breakPointObserver: BreakpointObserver) { }
 
     ngOnInit(): void {
         this.breakPointObserver.observe([Breakpoints.WebLandscape]).subscribe({
