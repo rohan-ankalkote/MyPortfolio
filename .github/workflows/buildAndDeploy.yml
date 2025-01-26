@@ -1,0 +1,37 @@
+name: Build MyPortfolio And Deploy
+
+on:
+    push:
+        branches:
+            - "main"
+    
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version: [20]
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            
+            - name: Node setup
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20
+                cache: 'npm'
+                cache-dependency-path: package-lock.json
+        
+            - name: Install Dependencies
+              run: npm install
+            
+            - name: Build Project
+              run: npm run build:prod
+            
+            - name: Deploy to ghPages
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                token: ${{secrets.TOKEN_KEY}}
+                folder: ./dist/my-portfolio/browser
+                branch: gh-pages
