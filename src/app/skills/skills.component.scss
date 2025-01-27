@@ -1,0 +1,43 @@
+:host {
+    display: block;
+    padding: 1rem;
+    background-color: #212121;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    border: 0px solid #757575;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    ul {
+        min-width: 40%;
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding: 0.25rem 0.5rem;
+            border-bottom: 1px solid #757575;
+            border-left: 1px solid #757575;
+            border-right: 1px solid #757575;
+
+            &:first-child {
+                border-top: 1px solid #757575;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+            }
+
+            &:last-child {
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+            }
+        }
+    }
+}
