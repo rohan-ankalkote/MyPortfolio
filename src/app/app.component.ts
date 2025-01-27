@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { BannerComponent } from './banner/banner.component';
-import { ContactComponent } from './contact/contact.component';
-import { SkillsComponent } from './skills/skills.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { WorkComponent } from './components/work/work.component';
 
 
 @Component({
     selector: 'app-root',
-    imports: [BannerComponent, ContactComponent, SkillsComponent],
+    imports: [BannerComponent, ContactComponent, SkillsComponent, WorkComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     host: {

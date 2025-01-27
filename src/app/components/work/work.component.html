@@ -1,0 +1,25 @@
+<h1>Work Experience</h1>
+
+@for (company of companies; track companies) {
+    <section>
+        <div class="work-heading">
+            <h3> {{company.name}} </h3>
+            <h5> {{company.startDate | dateRange:company.endDate}} </h5>
+            <h5>3 Years 6 Months</h5>
+        </div>
+        @for (position of company.positions; track $index) {
+            <div class="work-position">
+                <div class="work-heading">
+                    <h5> {{position.name}} </h5>
+                    <h6> {{position.startDate | dateRange:position.endDate}} </h6>
+                    <h6> {{position.startDate | dateDuration:position.endDate}} </h6>
+                </div>
+                <ul class="work-summary">
+                    @for (item of position.summary; track $index) {
+                        <li [innerHTML]="item"></li>
+                    }
+                </ul>
+            </div>
+        }
+    </section>
+}
