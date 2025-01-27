@@ -4,11 +4,12 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { WorkComponent } from './components/work/work.component';
+import { EducationComponent } from './components/education/education.component';
 
 
 @Component({
     selector: 'app-root',
-    imports: [BannerComponent, ContactComponent, SkillsComponent, WorkComponent],
+    imports: [BannerComponent, ContactComponent, SkillsComponent, WorkComponent, EducationComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     host: {

@@ -1,6 +1,8 @@
 :host {
     display: block;
     padding: 1rem;
+    background-color: #212121;
+    color: white;
 }
 
 h1 {
@@ -12,7 +14,7 @@ section {
 
     &>div {
         h3 {
-            color: #E65100;
+            color: #EF6C00;
         }
     }
 

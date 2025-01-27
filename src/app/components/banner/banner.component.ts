@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './banner.component.scss'
 })
 export class BannerComponent {
-    startYear: Date = new Date(2021, 0, 30);
+    startYear: Date = new Date(2021, 7, 30);
 
     getTotalYearsOfExperience(): string {
         var today = new Date();
