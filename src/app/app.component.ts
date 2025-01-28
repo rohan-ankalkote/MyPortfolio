@@ -5,11 +5,12 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { WorkComponent } from './components/work/work.component';
 import { EducationComponent } from './components/education/education.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @Component({
     selector: 'app-root',
-    imports: [BannerComponent, ContactComponent, SkillsComponent, WorkComponent, EducationComponent],
+    imports: [BannerComponent, ContactComponent, SkillsComponent, WorkComponent, EducationComponent, ProjectsComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     host: {
