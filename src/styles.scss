@@ -44,7 +44,12 @@ span {
 }
 
 card {
+    display: block;
     padding: 1rem;
+
+    card-title {
+        text-align: center;
+    }
 }
 
 .pc {
@@ -52,10 +57,6 @@ card {
         display: block;
         width: 1000px;
         margin: 0 auto;
-
-        & card-title {
-            text-align: center;
-        }
     }
 }
 
