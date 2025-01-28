@@ -41,3 +41,15 @@ section {
         }
     }
 }
+
+.pc :host {
+    padding: 1rem 30rem;
+
+    & section {
+        gap: 2rem;
+    }
+
+    & ul {
+        min-width: 25%;
+    }
+}

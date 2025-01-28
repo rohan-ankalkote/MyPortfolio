@@ -44,3 +44,11 @@ section {
         }
     }
 }
+
+.pc :host {
+    padding: 1rem 30rem;
+
+    & .work-position {
+        margin-left: 3rem;
+    }
+}

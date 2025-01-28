@@ -22,3 +22,13 @@ section {
         }
     }
 }
+
+
+.pc :host {  
+    padding: 1rem 30rem;
+
+        & section {
+            width: 75%;
+            margin: 1rem auto;
+        }
+}
