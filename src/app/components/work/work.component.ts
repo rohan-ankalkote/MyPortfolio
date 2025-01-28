@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 import { Company } from '../../models/models';
 import { DateRangePipe } from '../../pipes/date-range.pipe';
 import { DateDurationPipe } from '../../pipes/date-duration.pipe';
+import { CardComponent } from "../card/card.component";
+import { CardTitleComponent } from "../card-title/card-title.component";
+import { CardBodyComponent } from "../card-body/card-body.component";
 
 @Component({
     selector: 'work',
-    imports: [DateRangePipe, DateDurationPipe],
+    imports: [DateRangePipe, DateDurationPipe, CardComponent, CardTitleComponent, CardBodyComponent],
     templateUrl: './work.component.html',
     styleUrl: './work.component.scss'
 })

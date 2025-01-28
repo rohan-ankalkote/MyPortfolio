@@ -37,6 +37,28 @@ span {
     font-style: italic;
 }
 
+.dark {
+    display: block;
+    background-color: #212121;
+    color: white;
+}
+
+card {
+    padding: 1rem;
+}
+
+.pc {
+    & card {
+        display: block;
+        width: 1000px;
+        margin: 0 auto;
+
+        & card-title {
+            text-align: center;
+        }
+    }
+}
+
 // .hll {
 //     color: #FFD700;
 //     font-weight: bold;

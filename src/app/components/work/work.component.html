@@ -1,13 +1,17 @@
-<h1>Work Experience</h1>
+<card>
+    <card-title>
+        <h1>Work Experience</h1>
+    </card-title>
 
-@for (company of companies; track companies) {
-    <section>
-        <div class="work-heading">
-            <h3> {{company.name}} </h3>
-            <h5> {{company.startDate | dateRange:company.endDate}} </h5>
-            <h5>3 Years 6 Months</h5>
-        </div>
-        @for (position of company.positions; track $index) {
+    <card-body>
+        @for (company of companies; track companies) {
+        <section>
+            <div class="work-heading">
+                <h3> {{company.name}} </h3>
+                <h5> {{company.startDate | dateRange:company.endDate}} </h5>
+                <h5>3 Years 6 Months</h5>
+            </div>
+            @for (position of company.positions; track $index) {
             <div class="work-position">
                 <div class="work-heading">
                     <h5> {{position.name}} </h5>
@@ -16,10 +20,12 @@
                 </div>
                 <ul class="work-summary">
                     @for (item of position.summary; track $index) {
-                        <li [innerHTML]="item"></li>
+                    <li [innerHTML]="item"></li>
                     }
                 </ul>
             </div>
+            }
+        </section>
         }
-    </section>
-}
+    </card-body>
+</card>

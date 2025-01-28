@@ -1,12 +1,3 @@
-:host {
-    display: block;
-    padding: 1rem;
-}
-
-h1 {
-    text-align: center;
-}
-
 section {
     border-radius: 0.5rem;
     border: 1px solid #757575;
@@ -17,6 +8,7 @@ section {
         &:first-child {
             margin-bottom: 1rem;
         }
+
         &:last-child {
             margin-top: 1rem;
         }
@@ -24,11 +16,9 @@ section {
 }
 
 
-.pc :host {  
-    padding: 1rem 30rem;
-
-        & section {
-            width: 75%;
-            margin: 1rem auto;
-        }
+.pc :host {
+    & section {
+        width: 75%;
+        margin: 1rem auto;
+    }
 }
