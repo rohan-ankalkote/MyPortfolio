@@ -1,5 +1,5 @@
 section {
-    border: 0px solid #757575;
+    border: 0px solid var(--on-surface-variant);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -13,12 +13,12 @@ section {
 
         li {
             padding: 0.25rem 0.5rem;
-            border-bottom: 1px solid #757575;
-            border-left: 1px solid #757575;
-            border-right: 1px solid #757575;
+            border-bottom: 1px solid var(--on-surface-variant);
+            border-left: 1px solid var(--on-surface-variant);
+            border-right: 1px solid var(--on-surface-variant);
 
             &:first-child {
-                border-top: 1px solid #757575;
+                border-top: 1px solid var(--on-surface-variant);
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
             }

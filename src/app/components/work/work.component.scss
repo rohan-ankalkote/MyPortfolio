@@ -3,7 +3,7 @@ section {
 
     &>div {
         h3 {
-            color: #EF6C00;
+            color: var(--accent);
         }
     }
 
@@ -15,7 +15,7 @@ section {
     }
 
     .work-position {
-        border: 1px solid #757575;
+        border: 1px solid var(--on-surface-variant);;
         margin-left: 1.5rem;
         margin-top: 1rem;
         padding: 0.5rem;

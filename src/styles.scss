@@ -1,3 +1,25 @@
+.light {
+    --surface: #ffffff;
+    --on-surface: #212121;
+    --on-surface-variant: #757575;
+    --accent: #ef6c00;
+
+    display: block;
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
+.dark {
+    --surface: #212121;
+    --on-surface: #ffffff;
+    --on-surface-variant: #757575;
+    --accent: #ef6c00;
+
+    display: block;
+    background-color: var(--surface);
+    color: var(--on-surface);
+}
+
 body {
     font-family: Poppins;
 }
@@ -32,15 +54,9 @@ h6 {
 }
 
 span {
-    color: #EF6C00;
+    color: var(--accent);
     font-weight: bold;
     font-style: italic;
-}
-
-.dark {
-    display: block;
-    background-color: #212121;
-    color: white;
 }
 
 card {
@@ -59,9 +75,3 @@ card {
         margin: 0 auto;
     }
 }
-
-// .hll {
-//     color: #FFD700;
-//     font-weight: bold;
-//     font-style: italic;
-// }
